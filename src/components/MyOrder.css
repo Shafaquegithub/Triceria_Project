@@ -1,0 +1,114 @@
+.myorder-container {
+  min-width: 320px;
+  padding: 100px 20px 0px;
+  text-align: left;
+  /* display:none */
+}
+.time-div span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background-color: #cef5e2;
+  color: #48d893;
+  margin: 20px 0 50px;
+}
+.myorder-items-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.myorder-items-div img {
+  width: 30px;
+  height: 30px;
+}
+.myorder-items-div p {
+  font-weight: bold;
+  font-size: 13px;
+}
+.myorder-items-div p span {
+  font-weight: lighter;
+  color: rgb(196, 191, 191);
+}
+.plus-minus-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #48d893;
+  border-radius: 15px;
+  width: 60px;
+  height: 22px;
+  line-height: 0px;
+}
+.dropbox {
+  height: 50px;
+  border: 2px dashed #48d893;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #48d893;
+  font-size: 25px;
+  font-weight: 600;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-top: 20px;
+}
+.checkout button {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #48d893;
+  color: white;
+  border: none;
+  height: 33px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.cart-div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(186, 184, 184);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 40px;
+  margin: 100px 30px 0px;
+  color: orangered;
+  box-shadow: -3px 5px 15px 3px rgb(210, 249, 240);
+  z-index: 60;
+  background-color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .myorder-container {
+    display: none;
+  }
+  .cart-div {
+    display: block;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .cart-div {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    margin: 20px 20px 0px 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cart-div {
+    width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin: 20px 0px 0px 0px;
+
+  }
+}
