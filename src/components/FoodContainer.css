@@ -1,99 +1,107 @@
-.main-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 80vh;
-    overflow-y: scroll;
+.main-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80vh;
+  overflow-y: scroll;
 }
-.filter-div{
-    border: 1px solid rgb(200, 196, 196);
-    padding: 10px 2px;
-    width:80px;
-    margin:20px 30px 30px auto;
-    border-radius: 10px;
+.filter-div {
+  border: 1px solid rgb(200, 196, 196);
+  padding: 10px 2px;
+  width: 80px;
+  margin: 20px 30px 30px auto;
+  border-radius: 10px;
 }
-.sort{
-    padding: 10px 2px;
-    width:250px;
-    margin:20px 30px 0px auto;
-    border-radius: 10px;
-    color: rgb(184, 180, 180);
+.sort {
+  padding: 10px 2px;
+  width: 250px;
+  margin: 20px 30px 0px auto;
+  border-radius: 10px;
+  color: rgb(184, 180, 180);
 }
-select{
-    border: none;
-    color: rgb(126, 124, 124);
-    font-size: 17px;
+select {
+  border: none;
+  color: rgb(126, 124, 124);
+  font-size: 17px;
 }
-.food-container{
-    width: 90%;
-    max-width: 230px;
-    margin: 20px auto;
-    height:210px;
-    border-radius: 10px;
-    padding: 15px 18px;
+.food-container {
+  width: 90%;
+  max-width: 230px;
+  margin: 20px auto;
+  height: 210px;
+  border-radius: 10px;
+  padding: 15px 18px;
 }
-.star-heart-div{
-    display: flex;
-    justify-content: space-between;
+.star-heart-div {
+  display: flex;
+  justify-content: space-between;
 }
-.star-span{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 12px;
-    width: 55px;
-    height: 27px;
-    border-radius: 20px;
+.star-span {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  width: 55px;
+  height: 27px;
+  border-radius: 20px;
 }
-.heart-span{
-    background-color: white;
-    color: gray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.img-div img{
-    width:80px;
-    height: 80px;
-    margin-top: 20px;
-    border-radius: 50%;
-    box-shadow: -5px 15px 20px 3px rgb(207, 205, 205);
-}
-.item-title{
-    margin-top: 40px;
-    text-align: left;
-    color: gray;
-    font-size: 17px;
-}
-.item-title span{
-    background: white;
-    padding: 5px;
-    border-radius: 10px;
-}
-.item-price{
-    text-align: left;
-    font-size: 17px;
+.heart-span {
+  background-color: white;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
+.img-div img {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: -5px 15px 20px 3px rgb(207, 205, 205);
+}
+.item-title {
+  margin-top: 40px;
+  text-align: left;
+  color: gray;
+  font-size: 17px;
+}
+.item-title span {
+  background: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.item-title span[title="Add to cart"] {
+  cursor: pointer;
+  float: right;
+  color: orange;
+  box-shadow: 0px 0px 10px 2px gainsboro;
+}
+.item-title span[title="Add to cart"] :hover{
+  color: orangered;
 
+}
+.item-price {
+  text-align: left;
+  font-size: 17px;
+}
 
 @media screen and (max-width: 1100px) {
-.main-div{
+  .main-div {
     overflow-y: auto;
-}
+  }
 }
 @media screen and (max-width: 500px) {
-    .sort{
-        width:220px;
-    }
-    select{
-        font-size: 15px;
-    }
-    }
+  .sort {
+    width: 220px;
+  }
+  select {
+    font-size: 15px;
+  }
+}

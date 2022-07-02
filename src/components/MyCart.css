@@ -43,3 +43,8 @@
 .btn-home{
     background-color: #48D893;
 }
+.cart-total{
+    display: flex;
+    justify-content: space-evenly ;
+    margin-top: 50px;
+}
